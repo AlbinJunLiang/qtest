@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/AlbinJunLiang/qtest/10834be82eda4d28f2e612a161c820905ae96d71/Qtest.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Onest:wght@100..900&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Onest:wght@100..900&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>Qtest</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1 id="titulo-principal">Qtest</h1>
+
+      <button class="" id="opcionSalir">
+        <span class="material-symbols-outlined">home</span>
+      </button>
+      <button class="hamburger" id="hamburger-btn">
+        <span class="material-symbols-outlined">dehaze</span>
+      </button>
+
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a id="opcionLogout">🔙 Cerrar sesión</a>
+        <a id="opcionInfo">ℹ️ Información</a>
+      </div>
+    </nav>
+    <main id="main">
+      <article id="article1">
+        <h2 id="titulo">Seleccione un test</h2>
+        <p id="parrafo">
+          Puedes ajustar la cantidad de preguntas y el temporizador de manera
+          opcional.
+        </p>
+      </article>
+
+      <div class="container" style="display: none"></div>
+
+      <div id="div-examenes">
+        <div id="div-button-container"></div>
+      </div>
+
+      <div id="div-preguntas" style="display: none"></div>
+      <article id="article2" style="display: none">
+        <div>
+          <h2>Información general 📒</h2>
+          <p>
+            La aplicación esta diseñada para que los usuarios puedan practicar
+            simulacros o test personalizables. Se puede ajustar el tiempo del
+            temporizador a finalizar y la cantidad de preguntas que puede
+            contener el test.
+          </p>
+        </div>
+
+        <div>
+          <h2>Examen aleatorio 📝</h2>
+          <p>
+            Esta opción permite realizar un test con preguntas al azar de todos
+            los temas.
+          </p>
+        </div>
+
+        <div>
+          <h2>Opciones del navbar 📈</h2>
+          <p>
+            El navbar contiene únicamente dos opciones, uno para regresar la
+            pantalla principal o de inicio y la segunda opción es un boton de
+            hamburguesa que permite al usuario cerrar la sesión o ir a
+            información.
+          </p>
+        </div>
+
+        <div>
+          <h2>Otros detalles</h2>
+          <p>
+            La opción de ver explicación de la respuesta correcta aún no se
+            encuentra disponible.
+          </p>
+          <p>Esta aplicación es una opción reducida de la original.</p>
+        </div>
+      </article>
+
+      <div id="div-modalContainer"></div>
+
+      <div class="div-c">
+        <button id="btn-clearItem" style="display: none">
+          Eliminar progreso
+        </button>
+      </div>
+      <div class="div-c">
+        <button id="btn-next" onclick="" style="display: none">
+          Siguiente
+        </button>
+      </div>
+
+      <div id="countdown"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p id="footer-contacto">Contacto: XXX-XXXX</p>
+        <p id="footer-direccion">
+          <b>QTest</b>, la plicación web para test y prácticas
+        </p>
+      </div>
+      <p id="descripcion-derecho">
+        &copy; 2024 Edu. Todos los derechos reservados.
+      </p>
+      <img
+        src="https://www.svgrepo.com/show/63219/plane-paper.svg"
+        alt="icono"
+        width="40"
+        height="40"
+        style="margin-top: 5px"
+      />
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="functions/path.js"></script>
+    <script src="functions/services.js"></script>
+    <script src="functions/constructors.js"></script>
+    <script src="functions/modal.js"></script>
+    <script src="functions/scripts.js"></script>
+    <script></script>
+  </body>
+</html>
